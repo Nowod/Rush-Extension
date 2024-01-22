@@ -59,7 +59,8 @@ function generateRandomString(length, charOptions) {
     var punChars = '!@#$%^&*()-=_+,./<>?;:{}[]| '
     var enChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
     var numChars = '0123456789'
-    var cnChars = '一二三四五六七八九十'
+    var cnChars = '中文字符串是一种用于表示和处理中文文本的数据类型它包含了汉字标点符号和其他字符用于在计算机程序和应用中进行文字的输入输出和处理中文字符串的长度可以根据其中的字符数来计算每个汉字通常占用两个字节的存储空间'
+    var cnPunChars = '。？！，；：’‘“”（）【】{}、——……-'
 
     for (var i = 0; i < charOptions.length; i++) {
         switch (charOptions[i]) {
@@ -69,10 +70,7 @@ function generateRandomString(length, charOptions) {
                 break;
             case 'cn':
                 charset += cnChars;
-                charset += cnChars;
-                charset += cnChars;
-                charset += cnChars;
-                charset += cnChars;
+                charset += cnPunChars;
                 break;
             case 'num':
                 charset += numChars;
