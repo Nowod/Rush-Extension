@@ -1,0 +1,30 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="popup.css">
+
+</head>
+<body>
+    <h3>Rush Extension</h3>
+    <div>
+        <label for="numberInput">Length:</label>
+        <input type="number" id="numberInput" min="1" step="1">
+        <div id="options">
+            <label for="charOptions">Options:</label>
+            <input type="checkbox" id="enCheckbox" checked>大小写
+            <input type="checkbox" id="numCheckbox" checked>数字
+            <input type="checkbox" id="cnCheckbox" checked>中文
+            <input type="checkbox" id="punCheckbox" checked>标点
+        </div>
+        <div>
+            <button id="myButton">Generate</button>
+            <button id="copyButton">Copy</button>
+        </div>
+    </div>
+    <div id="outputArea"></div>
+
+
+    <script src="./popup.js"></script>
+</body>
+
+</html>
